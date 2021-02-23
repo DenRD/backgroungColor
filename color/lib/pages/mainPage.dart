@@ -12,7 +12,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Color _color = Colors.white;
 
-  void _incrementCounter() {
+  void _changeBackgroundColor() {
     setState(() {
       _color = Colors.primaries[Random().nextInt(Colors.primaries.length)];
     });
@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           onTap: () {
-            _incrementCounter();
+            _changeBackgroundColor();
           },
         ));
   }
